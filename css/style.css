@@ -2,7 +2,7 @@
     margin:0;
     padding:0;
     box-sizing: border-box;
-    font-family:'Jost','Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family:'Jost';
     color: black;
 }
 section{
@@ -23,16 +23,22 @@ a{
     font-size: 15px;
     font-weight: 500;
 }
+.defoult-butn:hover{
+    background-color: rgb(156, 156, 158);
+    cursor: pointer;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+}
 h2{
     font-size: 64px;
 }
 h3{
     font-size: 36px;
 }
-
 header{
     background-color: rgba(238, 239, 241, 1);
-    padding: 0 5%;
+    padding: 10px 5%;
 }
 .header-top{
     display: flex;
@@ -41,8 +47,8 @@ header{
     padding: 0 5%;
 }
 .logotyp__img{
-    width: 126;
-    height: 50;
+    width: 126px;
+    height: 50px;
 }
 .header__right-container{
     display: flex;
@@ -51,18 +57,33 @@ header{
 .header__menu{
     margin: 0 10px;
 }
+
+.header__menu a:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+
 .menu__link{
     font-weight: 500;
     font-size: 15px;
     color: rgba(27, 27, 29, 1);
     margin: 0 10px;
 }
+
+
+
 .header__btn-busket{
     background-color: white;
     padding: 10px;
     border-radius: 50%;
     border-color: white;
     margin: 0 10px;
+}
+
+.burg-menu {
+    max-width: 60px;
+    border-color:rgba(238, 239, 241, 1);
+    background-color: rgba(238, 239, 241, 1);
 }
 .top-screen{
     display: flex;
@@ -108,6 +129,7 @@ main{
 }
 .explore-text, .explore-h2{
     text-align: center;
+    margin: 0 0 40px 0;
 }
 .explore-container-cards{
     display: flex;
@@ -258,3 +280,11 @@ footer{
     margin: 0 5px;
     color: rgba(100, 100, 106, 1);
 }
+
+/**/
+
+
+  .burger-menu-button{
+    display: none;
+  }
+  
