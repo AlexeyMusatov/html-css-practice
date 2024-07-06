@@ -79,6 +79,13 @@ header{
     border-color: white;
     margin: 0 10px;
 }
+.header__btn-busket:hover{
+    background-color: rgb(189, 189, 189);
+    cursor: pointer;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+}
 
 .burg-menu {
     max-width: 60px;
@@ -147,7 +154,6 @@ main{
     border-radius: 24px;
     box-shadow: 0px 5px 5px 5px rgb(223, 223, 223);
 }
-
 .explore h3{
     align-self: flex-start;
     font-weight: 600;
@@ -156,6 +162,7 @@ main{
 .explore-icon{
     margin: 20px 0; 
 }
+
 .order{
     display: flex;
 }
@@ -173,6 +180,8 @@ main{
    margin: 15px;
    font-size: 24px;
 }
+
+
 .comments{
     display: flex;
     flex-direction: column;
@@ -198,10 +207,13 @@ main{
 }
 .comments-card{
     max-width: 350px;
+    max-height: 450px;
     background-color: white;
     box-shadow: 0px 5px 5px 5px rgb(223, 223, 223);
     border-radius: 5%;
     margin: 20px;
+    padding-bottom: 10px;
+   
 }
 .comments-avatars{
     border-radius: 5% 5%  0 0;
@@ -222,6 +234,17 @@ main{
 .comments-description{
     margin: 20px 0;
 }
+.comments-desc-container{
+    overflow: auto;
+    max-height: 200px;
+    width: 100%;
+}
+.arrow-left, .arrow-right{
+    border-radius: 55%;
+    padding: 10px;
+}
+
+
 .arrow-left:before{
     content: url('../img/arrow/arrow-left.png');
     margin-right: 10px;   
@@ -230,6 +253,22 @@ main{
     content: url('../img/arrow/arrow-right.png');   
     margin-left: 10px;
 }
+.arrow-left:hover{
+    background-color: rgb(228, 228, 228);
+    cursor: pointer;
+    -webkit-transition: 0.1s;
+    -o-transition: 0.1s;
+    transition: 0.1s;
+}
+.arrow-right:hover{
+    background-color: rgb(228, 228, 228);
+    cursor: pointer;
+    -webkit-transition: 0.1s;
+    -o-transition: 0.1s;
+    transition: 0.1s;
+}
+
+
 footer{
     padding: 10px 5%;
     display: grid;
@@ -249,6 +288,11 @@ footer{
     display: flex;
     align-items: center;
 }
+.contacts__box-icons{
+    max-width: 300px;
+    display: flex;
+    flex-wrap: nowrap;
+}
 .contacts__icon{
     margin: 20px;
 }
@@ -260,6 +304,10 @@ footer{
     align-items: center;
     gap: 5px;
 }
+.stores-link:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
 #email-ipt{
     padding: 10px;
     border-radius: 65px;
@@ -268,6 +316,7 @@ footer{
     border-color: white;
     box-shadow: 0 5px 5px 0 rgb(223, 223, 223);
     width: 100%;
+    max-width: 50%;
 }
 .straight-line{
     grid-column: 1/4;
@@ -287,4 +336,10 @@ footer{
   .burger-menu-button{
     display: none;
   }
-  
+  .burger-menu-button:hover{
+    background-color: rgb(189, 189, 189);
+    cursor: pointer;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+}
